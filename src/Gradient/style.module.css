@@ -1,0 +1,65 @@
+.container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	justify-content: center;
+}
+
+.pop{
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	align-items:center;
+	justify-content: center;
+	background-color: white;
+	padding: 3rem;
+	border-radius:2rem
+}
+
+/* 选择所有子元素 */
+.container > * {
+	margin: 12px;
+}
+
+.inputGroup{
+	display: flex;
+	align-items: center;
+}
+
+.inputColor{
+	width:32px;
+	height: 32px;
+	height: 32px;
+	margin-left: 12px;
+	border: none;
+	/* 去掉点击时的外边框 */
+	outline: none;
+	/* 去掉背景色 */
+	background-color: transparent;
+}
+
+
+.button{
+	padding: 12px 30px;
+	background-color: #3370FF;
+	border:none;
+	border-radius: 12px;
+	color: white;
+	font-size: 16px;
+	box-shadow: 
+		0 8px 14px rgba(36, 26, 218, 0.1),
+		0 12px 18px rgba(114, 114, 243, 0.1);
+	cursor:pointer;
+}
+
+.button:hover{
+	background-color: #5b8bfa;
+	box-shadow: 
+		0 8px 14px rgba(36, 26, 218, 0.1),
+		0 12px 18px rgba(114, 114, 243, 0.1);
+	transform: translateY(-2px);
+	/* 过渡 */
+	transition: all 0.2s ease-in-out;
+}
